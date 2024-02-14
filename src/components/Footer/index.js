@@ -9,17 +9,17 @@ function Footer() {
             <h2>Made by Joshua Garnaat</h2>
             <p>
                 <ul>
-                    <a href="">
+                    <a href="https://github.com/Jgarnaat">
                         <li className='logo'>
                             <VscGithubAlt />
                         </li>
                     </a>
-                    <a href=''>
+                    <a href='none'>
                         <li className='logo'>
                             <AiOutlineLinkedin />
                         </li>
                     </a>
-                    <a href=''>
+                    <a href='none'>
                         <li className='logo'>
                             <FaInstagram />
                         </li>

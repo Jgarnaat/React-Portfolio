@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Helmet } from 'react-helmet';
 import { validateEmail } from "../../utils/helpers";
 
 function Contact() {
@@ -41,7 +41,11 @@ function Contact() {
     };
 
     return (
+        
         <section id='reach-out' className="contact">
+            <Helmet>
+                <title>Contact Joshua</title>
+            </Helmet>
             <div className="flex-row">
                 <h2 className="section-title secondary-border">Reach Out</h2>
             </div>
@@ -52,9 +56,9 @@ function Contact() {
                     <p> Want to get into contact?</p>
                     <address>
                         Okemos, MI <br />
-                        P:<a href='rel:517.927.5427'>517.927.5427
+                        P:<a href='rel:517.927.5427'>517.927.5427</a>
                         <br />
-                        E:{""}
+                        E:<a href='mailto://jgarnaat8685@yahoo.com'>Jgarnaat8685@yahoo.com
                         </a>
                     </address>
                     <p>
