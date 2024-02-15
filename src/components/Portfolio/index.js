@@ -6,7 +6,9 @@ import BLOG from '../../assets/files/SQL2.avif'
 import PWA from '../../assets/files/PWA.png'
 import SRV from '../../assets/files/NodeSequelize.png'
 import { Helmet } from 'react-helmet';
-
+// update link for pgttg
+// make project titles link to github
+// detail project descriptions
 
 function Portfolio() {
     return (

@@ -86,7 +86,7 @@ function Resume() {
                     </p>
                 </div>
                 <div className='article column4'>
-                    <p className='column-title'>Various Certificates</p>
+                    <p className='column-title'>Certificates</p>
                     <p className='column-text'>
                         <ul>
                             <li className='logo'>

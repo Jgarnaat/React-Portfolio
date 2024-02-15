@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Helmet } from 'react-helmet';
 import { validateEmail } from "../../utils/helpers";
+// edit hello line
+// make sure form works properly
 
 function Contact() {
     const [email, setEmail] = useState("");
@@ -30,11 +32,6 @@ function Contact() {
             return;
         }
 
-        if(!setMessage(message)) {
-            setErrorMessage('Message is required');
-            return;
-        }
-
         setUserName("");
         setMessage("");
         setEmail("");
@@ -53,16 +50,16 @@ function Contact() {
             <div className="contact-info">
                 <div>
                     <h3>Hello {userName}</h3>
-                    <p> Want to get into contact?</p>
+                    <p> Below is my contact information</p>
                     <address>
-                        Okemos, MI <br />
-                        P:<a href='rel:517.927.5427'>517.927.5427</a>
+                        <strong>Okemos, MI <br /></strong>
+                        <strong>P:</strong><a href='rel:517.927.5427'>517.927.5427</a>
                         <br />
-                        E:<a href='mailto://jgarnaat8685@yahoo.com'>Jgarnaat8685@yahoo.com
+                        <strong>E:</strong><a href='mailto://jgarnaat8685@yahoo.com'>Jgarnaat8685@yahoo.com
                         </a>
                     </address>
                     <p>
-                        <strong>I'd love to hear your feedback!</strong>
+                        If you would like to contact me feel free to reach out
                     </p>
                 </div>
 
@@ -93,7 +90,8 @@ function Contact() {
                         <textarea
                         value={message}
                         name="message"
-                        id='contact-message'
+                        onChange={handleInputChange}
+                        id='contact-message'                        
                         placeholder="Your Message"
                         />
                         <button type="button" onClick={handleFormSubmit}>
